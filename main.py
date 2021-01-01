@@ -1,7 +1,9 @@
 def within_range(array, x, k):
 
-    # Using list comprehension, we iterate through the input array
-    # and return a new list that meets the conditions ( is within the specified range)
+    # Using list comprehension, we iterate through the input array,
+    # identify elements that are bigger or equal to (x-k),
+    # and are also smaller or equal to (x+k), and therefore within the specified range
+    # and return a new list containing those elements
     return [i for i in array if (i <= x+k) and (i >= x-k)]
 
 
